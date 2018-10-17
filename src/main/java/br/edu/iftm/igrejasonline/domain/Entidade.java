@@ -2,20 +2,29 @@ package br.edu.iftm.igrejasonline.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Entidade implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	//tratar endereco
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public Integer id;
 	public String nome;
+	
 	public String telefone;
 		
-	public Entidade(int i, String string, String string2) {
-		
+	public Entidade() {
+		super();
 	}
 	
-	public Entidade(String nome, String telefone) {
+	public Entidade(Integer id, String nome, String telefone) {
 		super();
+		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
 	}
