@@ -1,4 +1,4 @@
-package br.edu.iftm.atividadeComplementar;
+package br.edu.iftm.igrejasonline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

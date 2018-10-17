@@ -1,4 +1,4 @@
-package br.edu.iftm.atividadeComplementar.domain;
+package br.edu.iftm.igrejasonline.domain;
 
 import java.io.Serializable;
 
